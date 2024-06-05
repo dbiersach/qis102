@@ -1,7 +1,7 @@
 # welcome.py
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 x = np.linspace(-2, 2, 500)
 f_top = np.sqrt(1 - (np.abs(x) - 1) ** 2)
