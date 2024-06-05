@@ -3,7 +3,6 @@ conda update -n base conda -y
 conda create -y -n qis102 python=3.12
 conda activate qis102
 pip install pyqt6
-pip install pyside6
 pip install numpy
 pip install numba
 pip install matplotlib
@@ -14,7 +13,6 @@ pip install scikit-learn
 pip install pulp
 pip install pandas
 pip install pandasql
-pip install docutils
 pip install pandocfilters
 pip install numexpr
 pip install h5py
@@ -25,7 +23,6 @@ pip install pylint
 pip install mypy
 pip install autopep8
 pip install black
-pip install isort
 pip install ruff
 pip install websockets
 pip install requests
@@ -33,6 +30,7 @@ pip install pyserial
 pip install nodejs
 pip install 'ipython[all]'
 pip install ipympl
+pip install jupyter
 pip install jupyterlab
 pip install jupyterlab_widgets
 pip install jupyterlab_code_formatter
@@ -65,4 +63,3 @@ code --install-extension redhat.vscode-yaml
 code --install-extension charliermarsh.ruff
 echo 'y' | jupyter lab --generate-config
 echo 'c.ServerApp.use_redirect_file = False' >> $HOME/.jupyter/jupyter_lab_config.py
-jupyter nbextension enable --py --sys-prefix widgetsnbextension
