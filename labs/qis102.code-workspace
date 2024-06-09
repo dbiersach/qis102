@@ -53,7 +53,13 @@
         "intellicodeApiExamples.typescript.enabled": false,
         "editor.fontSize": 18,        
         "terminal.integrated.fontSize": 18,
-        "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+        "jupyter.widgetScriptSources": [
+            "jsdelivr.com",
+            "unpkg.com"
+        ],
+        "cSpell.words": [
+            "dilogarithm"
+        ],
       
     },
     "launch": {
