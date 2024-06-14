@@ -23,7 +23,7 @@ def pachinko_normal(num_balls, num_levels):
 
 def main():
     # Set simulation parameters
-    total_balls = 10_000
+    total_balls = 1000
     total_levels = 10
 
     # Simulate the pachinko machine
