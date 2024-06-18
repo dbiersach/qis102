@@ -29,7 +29,6 @@ def main():
     for i in range(3, len(y_prime3) - 3):
         y_prime3[i] = (y_prime2[i + 1] - y_prime2[i - 1]) / (2 * h)
 
-    plt.switch_backend("TkAgg")
     plt.figure(Path(__file__).name)
     plt.plot(x, 20 * y, label=r"$20\times\frac{\sin{x^2}}{1+x^3}$")
     plt.plot(
@@ -57,8 +56,6 @@ def main():
     ax.xaxis.set_major_locator(MultipleLocator(0.5))
     ax.yaxis.set_major_locator(MultipleLocator(1.0))
     ax.legend(loc="upper right", fontsize="16")
-    fig_manager = plt.get_current_fig_manager()
-    fig_manager.window.state("zoomed")
     plt.show()
 
 

@@ -256,7 +256,6 @@ def plot_incenter(ax):
 def main():
     random.seed(prng_seed)
 
-    plt.switch_backend("TkAgg")
     plt.figure(Path(__file__).name, constrained_layout=True)
     ax = plt.gca()
 
@@ -277,10 +276,6 @@ def main():
     ax.legend(loc="upper right")
     ax.grid("on")
     ax.set_aspect("equal")
-
-    fig_manager = plt.get_current_fig_manager()
-    fig_manager.window.state("zoomed")
-
     plt.show()
 
 

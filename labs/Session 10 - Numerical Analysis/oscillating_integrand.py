@@ -17,15 +17,12 @@ def F(x):
     return np.sin(x)
 
 
-plt.switch_backend("TkAgg")
 plt.figure(Path(__file__).name)
 x = np.linspace(a, b, 1000)
 plt.plot(x, f(x))
 plt.title(r"$f(x)=\cos{x}$")
 plt.xlabel("x")
 plt.ylabel("f(x)")
-fig_manager = plt.get_current_fig_manager()
-fig_manager.window.state("zoomed")
 plt.show()
 
 # scipy.quad()'s default limit of 50 subintervals may fail
