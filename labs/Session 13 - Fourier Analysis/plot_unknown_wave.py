@@ -9,7 +9,7 @@ alpha = 0
 beta = 0
 
 t = np.linspace(0, 2 * np.pi, 1000)
-y = np.sin(alpha * t) + np.sin(beta * t)
+y = np.zeros_like(t)
 
 plt.figure(Path(__file__).name)
 plt.title("QIS102 Task 13-03: Unknown Wave")
