@@ -77,7 +77,6 @@ def main(file_name):
     plt.figure(
         Path(__file__).name + f" ({file_name})",
         figsize=(12, 8),
-        constrained_layout=True,
     )
 
     plot_samples(plt.subplot(2, 2, 1), ts, ys)
@@ -85,6 +84,7 @@ def main(file_name):
     plot_idft(plt.subplot(2, 2, 3), ts, np.real(yr))
     plot_power_spectrum(plt.subplot(2, 2, 4), ct)
 
+    plt.tight_layout()
     plt.show()
 
 

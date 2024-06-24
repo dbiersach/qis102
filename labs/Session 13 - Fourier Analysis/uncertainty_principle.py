@@ -72,7 +72,7 @@ def main():
     ca = np.fft.rfft(ys) / 2
     ps = np.abs(ca) / len(ca)
 
-    plt.figure(Path(__file__).name, figsize=(12, 4), constrained_layout=True)
+    plt.figure(Path(__file__).name, figsize=(12, 4))
 
     ax_pdf = plt.subplot(1, 2, 1)
     ax_ps = plt.subplot(1, 2, 2)
@@ -86,6 +86,7 @@ def main():
         cache_frame_data=False, blit=True, repeat=False)
     # fmt: on
 
+    plt.tight_layout()
     plt.show()
 
 

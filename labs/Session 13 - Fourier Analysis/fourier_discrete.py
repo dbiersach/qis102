@@ -96,13 +96,14 @@ def main(file_name):
     ct = dft(ts, ys)  # ct = complex terms of the DFT
     yr = idft(ts, ct)  # yr = reconstructed y values
 
-    plt.figure(file_name, figsize=(12, 8), constrained_layout=True)
+    plt.figure(file_name, figsize=(12, 8))
 
     plot_samples(plt.subplot(2, 2, 1), ts, ys)
     plot_dft(plt.subplot(2, 2, 2), ct)
     plot_idft(plt.subplot(2, 2, 3), ts, np.real(yr))
     plot_power_spectrum(plt.subplot(2, 2, 4), ct)
 
+    plt.tight_layout()
     plt.show()
 
 

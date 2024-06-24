@@ -89,7 +89,7 @@ def plot_power_spectrum(ax, ct):
 
 
 def main():
-    plt.figure(Path(__file__).name, figsize=(12, 8), constrained_layout=True)
+    plt.figure(Path(__file__).name, figsize=(12, 8))
 
     sample_duration = 2 * np.pi
     num_samples = 1000
@@ -110,6 +110,7 @@ def main():
     plot_idft(plt.subplot(2, 2, 3), ts, np.real(yr))
     plot_power_spectrum(plt.subplot(2, 2, 4), ct)
 
+    plt.tight_layout()
     plt.show()
 
 
