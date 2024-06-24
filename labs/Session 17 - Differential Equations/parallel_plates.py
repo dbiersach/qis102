@@ -31,8 +31,8 @@ def insulator_edges(a):
 
 
 def solve_laplace(ax, boundary_func):
-    left_volts = 9
-    right_volts = 9
+    left_volts = -1
+    right_volts = 1
 
     N = 100
     grid = np.zeros((N, N))
