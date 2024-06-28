@@ -58,7 +58,19 @@
             "unpkg.com"
         ],
         "cSpell.words": [
-            "dilogarithm"
+            "Almaden",
+            "argmax",
+            "CNOT",
+            "COBYLA",
+            "CPHASE",
+            "dilogarithm",
+            "eigensolvers",
+            "multivectors",
+            "opflow",
+            "passmanagers",
+            "satisfiability",
+            "statevectors",
+            "stds"
         ],
       
     },
