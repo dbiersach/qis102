@@ -8,7 +8,7 @@ from numba import float64, vectorize
 
 
 def f(x):
-    # Standard Normal CDF
+    # Standard Normal PDF
     return 1.0 / np.sqrt(2.0 * np.pi) * np.exp(-np.power(x, 2) / 2.0)
 
 
