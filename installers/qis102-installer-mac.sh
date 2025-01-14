@@ -2,7 +2,6 @@ cd $HOME
 conda update -n base conda -y
 conda create -y -n qis102 python=3.12
 conda activate qis102
-pip install pyqt6
 pip install numpy
 pip install numba
 pip install matplotlib
