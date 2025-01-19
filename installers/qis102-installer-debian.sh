@@ -37,7 +37,9 @@ pip install jupyter_contrib_nbextensions
 pip install jupyterblack
 pip install pygame
 pip install 'qiskit[all]'
-pip install qiskit_ibm_runtime
+pip install 'qiskit[visualization]'
+pip install qiskit-aer
+pip install qiskit-ibm-runtime
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-vscode.powershell
